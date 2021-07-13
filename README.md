@@ -84,3 +84,10 @@ export const OPTIONS: IHandlerOptions = {
 
 ## 错误处理
 因为中间件都是使用 es6 的 async/await 语法, 没有捕获 promise reject 错误, 所以普通情况下, 中间件报错时, 因为 next 不执行, 整个请求会堵塞, 所以使用了 express-async-errors 模块来处理promise错误.
+
+## 测试
+进入文件目录, 使用如下命令跑单元测试
+```
+npm test 
+```
+
