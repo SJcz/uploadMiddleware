@@ -1,0 +1,26 @@
+### user define
+# editor
+.vscode
+
+## docs
+doc
+logs
+data
+### template
+# Logs
+logs
+*.log
+
+## js
+*.js
+
+## tmp
+tmp
+files
+trunks
+
+# Dependency directories
+node_modules/
+./node_modules
+
+
