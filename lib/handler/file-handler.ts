@@ -3,7 +3,7 @@ import mime from "mime";
 import path from 'path';
 import fs from 'fs-extra';
 import { ResourceHandler } from "./resource-handler";
-import { OPTIONS } from "./options";
+import { OPTIONS } from "../options";
 import { md5_file } from "../util/utils";
 
 const downloadsMap = new Map();

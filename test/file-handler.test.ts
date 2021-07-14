@@ -2,12 +2,12 @@ process.env.express_port = <any>8080;
 import should from 'should';
 console.log(should.toString());
 import express from 'express';
-import { uploadmiddleware } from '..';
+import { uploadMiddleware } from '..';
 import fetch from 'node-fetch';
 import { OPTIONS } from '../lib/options';
 import fs from 'fs-extra';
 import path from 'path';
-import { ResourceHandler } from '../lib/resource-handler';
+import { ResourceHandler } from '../lib/handler/resource-handler';
 import FormData from 'form-data';
 import http from 'http';
 import _ from 'lodash';
@@ -23,7 +23,7 @@ describe('测试 file-handler 模块的方法', function() {
     before(async () => {
         const startServer = new Promise((resolve, reject) => {
             const app = express();
-            uploadmiddleware(app, {
+            uploadMiddleware(app, {
                 routes: {
                     review: '/v1/file/review/:fileId',
                     info: '/v1/file/:fileId',

@@ -2,14 +2,14 @@
  * 该文件主要用于本地启动一个服务从而测试中间件.
  */
 import express from "express";
-import { uploadmiddleware } from ".";
+import { uploadMiddleware } from ".";
 
 const app = express();
 app.use((req, res, next) => {
     console.log(req.url);
     next();
 })
-uploadmiddleware(app, {
+uploadMiddleware(app, {
     routes: {
         review: '/v1/file/review/:fileId',
         info: '/v1/file/:fileId',

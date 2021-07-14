@@ -1,8 +1,7 @@
 import express from "express";
 import multer from "multer";
-import { md5_str } from "../util/utils";
-import { OPTIONS } from "./options";
-import { ResourceHandler } from "./resource-handler";
+import { md5_str } from "./util/utils";
+import { ResourceHandler } from "./handler/resource-handler";
 
 /**multer 中间件处理时的文件信息结构 */
 interface IMulterFileStructure {

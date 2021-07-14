@@ -1,6 +1,6 @@
 import path from 'path';
 import fs from 'fs-extra';
-import { OPTIONS } from './options';
+import { OPTIONS } from '../options';
 
 /**
  * 封装处理资源的逻辑

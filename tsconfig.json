@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es6",
+    "target": "es5",
     "module": "commonjs",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "dist",
-    "allowJs": false
+    "allowJs": false,
+    "declaration": true,
+    "outDir": "dist"
   },
   "include": [
     "**/*"
@@ -15,5 +16,5 @@
   "exclude": [
     "node_modules",
     "dist"
-  ],
+  ]
 }

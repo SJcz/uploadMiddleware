@@ -1,6 +1,6 @@
 import should from 'should';
 console.log(should.toString());
-import { ResourceHandler } from "../lib/resource-handler";
+import { ResourceHandler } from "../lib/handler/resource-handler";
 import path from 'path';
 import fs from 'fs-extra';
 
