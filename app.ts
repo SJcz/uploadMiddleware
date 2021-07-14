@@ -2,7 +2,7 @@
  * 该文件主要用于本地启动一个服务从而测试中间件.
  */
 import express from "express";
-import { uploadMiddleware } from ".";
+import uploadMiddleware = require('.');
 
 const app = express();
 app.use((req, res, next) => {

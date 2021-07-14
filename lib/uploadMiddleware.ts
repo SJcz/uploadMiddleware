@@ -4,7 +4,7 @@ import { deleteMiddleHandler, downloadMiddleHandler, infoMiddleHandler, reviewMi
 import _ from 'lodash';
 import { uploadCompleteFileMid } from '../lib/file-upload-middleware';
 
-export function uploadMiddleware(app: express.Application, options: IHandlerOptions): void {
+export = function uploadMiddleware(app: express.Application, options: IHandlerOptions): void {
     Object.assign(OPTIONS, options);
     console.log(`uploadmiddleware.options:`);
     console.log(OPTIONS);
@@ -17,3 +17,4 @@ export function uploadMiddleware(app: express.Application, options: IHandlerOpti
     app.post(OPTIONS.routes.upload, uploadCompleteFileMid(), uploadMiddleHandler);
     app.delete(OPTIONS.routes.delete, deleteMiddleHandler);
 }
+

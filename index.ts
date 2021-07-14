@@ -1,1 +1,2 @@
-export { uploadMiddleware } from './lib/uploadMiddleware';
+import uploadMiddleware from './lib/uploadMiddleware';
+export = uploadMiddleware;

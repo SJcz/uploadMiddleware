@@ -2,7 +2,7 @@ process.env.express_port = <any>8080;
 import should from 'should';
 console.log(should.toString());
 import express from 'express';
-import { uploadMiddleware } from '..';
+import uploadMiddleware from '../index';
 import fetch from 'node-fetch';
 import { OPTIONS } from '../lib/options';
 import fs from 'fs-extra';
