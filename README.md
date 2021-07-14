@@ -31,7 +31,12 @@ app.listen(process.env.express_port || 8080, () => {
 });
 ```
 
-**暂未发布到 npm, 直接使用请先编译成js.**
+## 安装
+使用npm 安装
+```
+npm i @as626040875/uploadmiddleware --save 
+```
+
 
 ## 路由
 该中间件被引入时, 默认会自动注册五个路由

@@ -1,5 +1,5 @@
 {
-  "name": "@sjcz/uploadmiddleware",
+  "name": "@as626040875/uploadmiddleware",
   "version": "0.1.0",
   "description": "一个TypeScript版本的express上传下载中间件, 可直接作为基础中间件直接引入",
   "main": "dist/index.js",
