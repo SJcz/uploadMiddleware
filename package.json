@@ -1,11 +1,13 @@
 {
   "name": "uploadmiddleware",
   "version": "0.0.1",
-  "description": "一个TypeScript版本的express上传下载中间件, 可直接作为基础服务直接引入",
-  "main": "index.js",
+  "description": "一个TypeScript版本的express上传下载中间件, 可直接作为基础中间件直接引入",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "pretest": "tsc",
-    "test": " mocha ./test/**/*.test.js"
+    "test": " mocha ./dist/test/**/*.test.js"
   },
   "repository": {
     "type": "git",
