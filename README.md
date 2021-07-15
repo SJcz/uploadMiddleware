@@ -6,8 +6,8 @@
 
 ## 使用
 ```javascript
-import express from "express";
-import { uploadmiddleware } from "uploadmiddleware";
+const express = require('express')
+const uploadMiddleware =  require('@as626040875/uploadmiddleware');
 
 const app = express();
 app.use((req, res, next) => {
@@ -24,7 +24,7 @@ uploadmiddleware(app, {
     },
     fileRootPath: '', // 文件上传时的基础存储目录, 默认是 process.cwd()
     downloadsLimit: 10, // 同时下载的数量限制
-    needOauthMD5: true // 文件上传是否需要验证 md5
+    needOauthMD5: false // 文件上传是否需要验证 md5
 });
 app.listen(process.env.express_port || 8080, () => {
     console.log(`server is running ${process.env.express_port || 8080}`);
@@ -32,10 +32,14 @@ app.listen(process.env.express_port || 8080, () => {
 ```
 
 ## 安装
-使用npm 安装
+#### 使用 npm
+使用如下命令安装 uploadmiddleware  
 ```
 npm i @as626040875/uploadmiddleware --save 
 ```
+
+### 直接下载编译
+从 github 上直接下来代码, 编译之后引用即可.
 
 
 ## 路由
