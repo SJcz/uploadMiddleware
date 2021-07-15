@@ -4,6 +4,16 @@
 一个TypeScript版本的express上传下载中间件, 可作为基础中间件直接引入
 
 
+## 安装
+#### 使用 npm
+使用如下命令安装 uploadmiddleware  
+```
+npm i @as626040875/uploadmiddleware --save 
+```
+
+#### 直接下载编译
+从 github 上直接下来代码, 编译之后引用即可.
+
 ## 使用
 ```javascript
 const express = require('express')
@@ -30,16 +40,6 @@ app.listen(process.env.express_port || 8080, () => {
     console.log(`server is running ${process.env.express_port || 8080}`);
 });
 ```
-
-## 安装
-#### 使用 npm
-使用如下命令安装 uploadmiddleware  
-```
-npm i @as626040875/uploadmiddleware --save 
-```
-
-### 直接下载编译
-从 github 上直接下来代码, 编译之后引用即可.
 
 
 ## 路由
